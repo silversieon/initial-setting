@@ -62,7 +62,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/ubuntu/actions-runner/_work/sb-study/sb-study
+            cd /home/ubuntu/actions-runner/_work/initial-setting/initial-setting
             docker compose down
             docker compose pull
             docker compose up -d --build
